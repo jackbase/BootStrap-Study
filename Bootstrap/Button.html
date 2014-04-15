@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Button</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/docs.css" rel="stylesheet" />
+    <link href="Content/github.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">按钮</h1>
+        <h3>选项</h3>
+        <div class="bs-example">
+            <button class="btn btn-default" type="button">默认</button>
+            <button class="btn btn-primary" type="button">主要</button>
+            <button class="btn btn-success" type="button">成功</button>
+            <button class="btn btn-info" type="button">信息</button>
+            <button class="btn btn-warning" type="button">警告</button>
+            <button class="btn btn-danger" type="button">危险</button>
+            <button class="btn btn-link" type="button">链接</button>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="comment">&lt;!-- Standard button --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Default<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Provides extra visual weight and identifies the primary action in a set of buttons --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary"</span>&gt;</span>Primary<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates a successful or positive action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-success"</span>&gt;</span>Success<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Contextual button for informational alert messages --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-info"</span>&gt;</span>Info<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates caution should be taken with this action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-warning"</span>&gt;</span>Warning<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Indicates a dangerous or potentially negative action --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-danger"</span>&gt;</span>Danger<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+
+<span class="comment">&lt;!-- Deemphasize a button by making it look like a link while maintaining button behavior --&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-link"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+        </div>
+
+        <h3>尺寸</h3>
+        <div class="bs-example">
+            <p>
+                <button class="btn btn-primary btn-lg" type="button">Large button</button>
+                <button class="btn btn-default btn-lg" type="button">Large button</button>
+            </p>
+            <p>
+                <button class="btn btn-primary" type="button">Default button</button>
+                <button class="btn btn-default" type="button">Default button</button>
+            </p>
+            <p>
+                <button class="btn btn-primary btn-sm" type="button">Small button</button>
+                <button class="btn btn-default btn-sm" type="button">Small button</button>
+            </p>
+            <p>
+                <button class="btn btn-primary btn-xs" type="button">Extra small button</button>
+                <button class="btn btn-default btn-xs" type="button">Extra small button</button>
+            </p>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-lg"</span>&gt;</span>Large button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg"</span>&gt;</span>Large button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary"</span>&gt;</span>Default button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span>&gt;</span>Default button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-sm"</span>&gt;</span>Small button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-sm"</span>&gt;</span>Small button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<span class="tag">&lt;<span class="title">p</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-xs"</span>&gt;</span>Extra small button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-xs"</span>&gt;</span>Extra small button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">p</span>&gt;</span></code></pre>
+
+        </div>
+        <div class="bs-example">
+            <div class="well" style="margin: 0px auto 10px; max-width: 400px;">
+                <button class="btn btn-primary btn-lg btn-block" type="button">此按钮为块级元素</button>
+                <button class="btn btn-default btn-lg btn-block" type="button">此按钮为块级元素</button>
+            </div>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-lg btn-block"</span>&gt;</span>Block level button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg btn-block"</span>&gt;</span>Block level button<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+        </div>
+
+        <h3>活动状态</h3>
+        <p class="bs-example">
+            <button class="btn btn-primary btn-lg active" type="button">Primary button</button>
+            <button class="btn btn-default btn-lg active" type="button">Button</button>
+            <a class="btn btn-primary btn-lg active" role="button" href="#">Primary link</a>
+            <a class="btn btn-default btn-lg active" role="button" href="#">Link</a>
+        </p>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-lg active"</span>&gt;</span>Primary button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg active"</span>&gt;</span>Button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-lg active"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Primary link<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg active"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span></code></pre>
+
+        </div>
+
+        <h3>禁用状态</h3>
+        <p class="bs-example">
+            <button disabled="disabled" class="btn btn-primary btn-lg" type="button">Primary button</button>
+            <button disabled="disabled" class="btn btn-default btn-lg" type="button">Button</button>
+            <a class="btn btn-primary btn-lg disabled" role="button" href="#">Primary link</a>
+            <a class="btn btn-default btn-lg disabled" role="button" href="#">Link</a>
+        </p>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-lg btn-primary"</span> <span class="attribute">disabled</span>=<span class="value">"disabled"</span>&gt;</span>Primary button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg"</span> <span class="attribute">disabled</span>=<span class="value">"disabled"</span>&gt;</span>Button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn btn-primary btn-lg disabled"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Primary link<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">a</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">class</span>=<span class="value">"btn btn-default btn-lg disabled"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+                 </code></pre>
+
+        </div>
+
+        <h3>可作按钮使用的HTML标签</h3>
+        <form class="bs-example">
+            <a class="btn btn-default" role="button" href="#">Link</a>
+            <button class="btn btn-default" type="submit">Button</button>
+            <input class="btn btn-default" type="button" value="Input">
+            <input class="btn btn-default" type="submit" value="Submit">
+        </form>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">a</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">href</span>=<span class="value">"#"</span> <span class="attribute">role</span>=<span class="value">"button"</span>&gt;</span>Link<span class="tag">&lt;/<span class="title">a</span>&gt;</span>
+<span class="tag">&lt;<span class="title">button</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">type</span>=<span class="value">"submit"</span>&gt;</span>Button<span class="tag">&lt;/<span class="title">button</span>&gt;</span>
+<span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">value</span>=<span class="value">"Input"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">input</span> <span class="attribute">class</span>=<span class="value">"btn btn-default"</span> <span class="attribute">type</span>=<span class="value">"submit"</span> <span class="attribute">value</span>=<span class="value">"Submit"</span>&gt;</span></code></pre>
+
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Jquery/jquery-1.10.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

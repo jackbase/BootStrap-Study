@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Tools</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/docs.css" rel="stylesheet" />
+    <link href="Content/github.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">图片&工具</h1>
+        <h3>图片</h3>
+        <div class="bs-example bs-example-images">
+            <img class="img-rounded" style="width: 140px; height: 140px;" alt="140x140" src="Images/1.gif">
+            <img class="img-circle" style="width: 140px; height: 140px;" alt="140x140" src="Images/2.gif">
+            <img class="img-thumbnail" style="width: 140px; height: 140px;" alt="140x140" src="Images/3.gif">
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"..."</span> <span class="attribute">alt</span>=<span class="value">"..."</span> <span class="attribute">class</span>=<span class="value">"img-rounded"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"..."</span> <span class="attribute">alt</span>=<span class="value">"..."</span> <span class="attribute">class</span>=<span class="value">"img-circle"</span>&gt;</span>
+<span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"..."</span> <span class="attribute">alt</span>=<span class="value">"..."</span> <span class="attribute">class</span>=<span class="value">"img-thumbnail"</span>&gt;</span></code></pre>
+
+        </div>
+        <h3>工具Class</h3>
+        <h4>关闭按钮</h4>
+        <div class="bs-example">
+            <p>
+                <button class="close" aria-hidden="true" type="button">×</button>
+            </p>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">button</span> <span class="attribute">type</span>=<span class="value">"button"</span> <span class="attribute">class</span>=<span class="value">"close"</span> <span class="attribute">aria-hidden</span>=<span class="value">"true"</span>&gt;</span>&amp;times;<span class="tag">&lt;/<span class="title">button</span>&gt;</span></code></pre>
+
+        </div>
+        <h4>Carets</h4>
+        <div class="bs-example">
+            <span class="caret"></span>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"caret"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre>
+
+        </div>
+        <h4>快速设置浮动</h4>
+        <div class="bs-example">
+            <div class="pull-left">...123</div>
+            <div class="pull-right">...456</div>
+        </div>
+        <div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"pull-left"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+<span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"pull-right"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+        <div class="highlight">
+<pre><code class="language-css undefined">// Classes
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+// Usage as mixins
+.element {
+  .pull-left();
+}
+.another-element {
+  .pull-right();
+}</code></pre>
+
+</div>
+        <h4>内容区域居中</h4>
+        <div class="bs-example">
+            <div class="center-block">123456</div>
+        </div>
+        <div class="highlight">
+<pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"center-block"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+
+</div>
+        <div class="highlight">
+<pre><code class="language-css undefined">// 作为classe使用
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+// 作为mixin使用
+.element {
+  .center-block();
+}</code></pre>
+
+</div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Jquery/jquery-1.10.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

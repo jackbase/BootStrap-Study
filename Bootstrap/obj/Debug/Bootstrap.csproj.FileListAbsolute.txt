@@ -1,0 +1,5 @@
+E:\Git\PackDesign\Bootstrap Study\Bootstrap\bin\Bootstrap.dll
+E:\Git\PackDesign\Bootstrap Study\Bootstrap\bin\Bootstrap.pdb
+E:\Git\PackDesign\Bootstrap Study\Bootstrap\obj\Debug\Bootstrap.csprojResolveAssemblyReference.cache
+E:\Git\PackDesign\Bootstrap Study\Bootstrap\obj\Debug\Bootstrap.dll
+E:\Git\PackDesign\Bootstrap Study\Bootstrap\obj\Debug\Bootstrap.pdb

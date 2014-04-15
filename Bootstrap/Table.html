@@ -1,0 +1,403 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Table</title>
+
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/docs.css" rel="stylesheet" />
+    <link href="Content/github.min.css" rel="stylesheet" />
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-header">表格</h1>
+        <h3>基本案例</h3>
+        <div class="bs-example">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table"</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+        </div>
+
+        <h3>条纹状表格</h3>
+        <div class="bs-example">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table table-striped"</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+
+        </div>
+
+        <h3>带边框的表格</h3>
+        <div class="bs-example">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@TwBootstrap</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table table-bordered"</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+        </div>
+
+        <h3>鼠标悬停</h3>
+        <div class="bs-example">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table table-hover"</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+        </div>
+
+        <h3>紧缩表格</h3>
+        <div class="bs-example">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>First Name</th>
+                        <th>Last Name</th>
+                        <th>Username</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td colspan="2">Larry the Bird</td>
+                        <td>@twitter</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table table-condensed"</span>&gt;</span>
+  ...
+<span class="tag">&lt;/<span class="title">table</span>&gt;</span></code></pre>
+        </div>
+
+        <h3>状态class</h3>
+        <div class="bs-example">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Column heading</th>
+                        <th>Column heading</th>
+                        <th>Column heading</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="active">
+                        <td>1</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="success">
+                        <td>3</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="warning">
+                        <td>5</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                    <tr class="danger">
+                        <td>7</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                        <td>Column content</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="comment">&lt;!-- On rows --&gt;</span>
+<span class="tag">&lt;<span class="title">tr</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+<span class="tag">&lt;<span class="title">tr</span> <span class="attribute">class</span>=<span class="value">"success"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+<span class="tag">&lt;<span class="title">tr</span> <span class="attribute">class</span>=<span class="value">"warning"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+<span class="tag">&lt;<span class="title">tr</span> <span class="attribute">class</span>=<span class="value">"danger"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">tr</span>&gt;</span>
+
+<span class="comment">&lt;!-- On cells (`td` or `th`) --&gt;</span>
+<span class="tag">&lt;<span class="title">tr</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"active"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"success"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"warning"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">td</span> <span class="attribute">class</span>=<span class="value">"danger"</span>&gt;</span>...<span class="tag">&lt;/<span class="title">td</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">tr</span>&gt;</span></code></pre>
+
+        </div>
+
+        <h3>响应式表格</h3>
+        <div class="bs-example">
+            <div class="table-responsive">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.table-responsive -->
+
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                            <th>Table heading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                            <td>Table cell</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <!-- /.table-responsive -->
+        </div>
+        <div class="highlight">
+            <pre><code class="language-html xml"><span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"table-responsive"</span>&gt;</span>
+  <span class="tag">&lt;<span class="title">table</span> <span class="attribute">class</span>=<span class="value">"table"</span>&gt;</span>
+    ...
+  <span class="tag">&lt;/<span class="title">table</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre>
+        </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="Jquery/jquery-1.10.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
